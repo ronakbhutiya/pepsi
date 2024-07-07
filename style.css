@@ -90,7 +90,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  /* height: calc(100vh - 10rem); */
+  height: calc(100vh - 20rem);
 }
 .icons {
   position: absolute;
@@ -125,10 +125,44 @@ body {
   .nav__ul {
     font-size: 1.6rem;
   }
-  .icons {
-    display: none;
+}
+@media (max-width: 58.13em) {
+  html {
+    font-size: 50%;
   }
 }
+@media (max-width: 53.13em) {
+  .flex {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  nav {
+    display: none;
+  }
+  body {
+    padding: 0 6rem;
+  }
+  .logo {
+    width: 6rem;
+    height: 6rem;
+  }
+  .pepsi-img {
+    width: 20rem;
+  }
+  .text__header {
+    font-size: 4rem;
+  }
+  .text {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+  }
+}
+
+/*
 @media (max-width: 65.63em) {
   nav {
     display: none;
@@ -166,4 +200,4 @@ body {
   body {
     padding: 0 2rem;
   }
-}
+} */
