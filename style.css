@@ -47,6 +47,10 @@ body {
 .nav__link {
   text-decoration: none;
   color: var(--color--white);
+  transition: all 0.3s ease-in-out;
+}
+.nav__link:hover {
+  color: #cdc8c8;
 }
 /* -----------------text-------------- */
 .text__header {
