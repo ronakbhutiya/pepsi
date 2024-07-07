@@ -16,7 +16,8 @@ html {
 body {
   background-color: var(--color--blue);
   padding: 0 10rem;
-  overflow: hidden;
+
+  transition: all 0.3s ease-in-out;
 }
 .main {
   position: relative;
@@ -78,13 +79,14 @@ body {
 }
 .pepsi-img {
   margin-right: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  height: calc(100vh - 10rem);
+  /* height: calc(100vh - 10rem); */
 }
 .icons {
   position: absolute;
@@ -106,11 +108,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 1rem;
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .btn-box img {
   width: 5rem;
@@ -123,5 +120,46 @@ body {
 @media (max-width: 75em) {
   .nav__ul {
     font-size: 1.6rem;
+  }
+  .icons {
+    display: none;
+  }
+}
+@media (max-width: 65.63em) {
+  nav {
+    display: none;
+  }
+  .flex {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .pepsi-img {
+    width: 5rem;
+  }
+  .text__header {
+    font-size: 4rem;
+  }
+  .text {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  .header {
+    height: 6rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    padding-top: 1rem;
+  }
+  .container__text {
+    width: 100%;
+    margin: 3rem 0;
+  }
+  body {
+    padding: 0 2rem;
   }
 }
