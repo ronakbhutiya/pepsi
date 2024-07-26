@@ -3,7 +3,8 @@ const img = document.querySelector(".pepsi-img");
 const btn2 = document.getElementById("pepsi-btn2");
 const btn1 = document.getElementById("pepsi-btn1");
 const btn3 = document.getElementById("pepsi-btn3");
-
+const header = document.querySelector(".header");
+const menu_box = document.querySelector(".menu-box");
 btn1.addEventListener("click", function () {
   body.style.backgroundColor = "#0062be";
   img.src = "img/pepsi001.png";
@@ -15,4 +16,8 @@ btn2.addEventListener("click", function () {
 btn3.addEventListener("click", function () {
   body.style.backgroundColor = "#1e1e1e";
   img.src = "img/pepsi003.png";
+});
+menu_box.addEventListener("click", function () {
+  console.log("click");
+  header.classList.toggle("nav-active");
 });
