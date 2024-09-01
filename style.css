@@ -84,6 +84,8 @@ body {
   font-size: 1.6rem;
 }
 .pepsi-img {
+  object-fit: cover;
+  height: 100%;
   margin-right: 2rem;
   transition: all 0.3s ease-in-out;
 }
@@ -119,6 +121,7 @@ body {
   display: none;
   width: 4rem;
   height: 4rem;
+  padding-right: 6rem;
   object-fit: cover;
   cursor: pointer;
 }
@@ -154,7 +157,7 @@ body {
 @media (max-width: 53.13em) {
   .flex {
     flex-direction: column-reverse;
-    gap: 2rem;
+    /* gap: 2rem; */
   }
   .menu-box {
     display: block;
@@ -207,13 +210,13 @@ body {
     height: 6rem;
   }
   .pepsi-img {
-    width: 20rem;
+    height: 50%;
   }
   .text__header {
     font-size: 4rem;
   }
   .text {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     font-size: 1.5rem;
   }
   .btn {
